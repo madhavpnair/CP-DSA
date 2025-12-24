@@ -1,4 +1,4 @@
-# LeetCode 355 — Design Twitter
+# LeetCode 355 — Design Twitter (Unoptimized or naive approach)
 
 We are asked to implement four methods in the `Twitter` class<br>
 
