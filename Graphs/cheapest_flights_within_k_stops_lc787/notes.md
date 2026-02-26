@@ -24,12 +24,12 @@ eg :
 0 --> 1 : cost = 100
 1 --> 2 : cost = 100
 ```
-suppose k=0, src=0, dst=2
-
+suppose k=0, src=0, dst=2<br>
+k+1 = 1<br>
 if we update in-place during the first iteration:
 1. Relax 0 --> 1 , so dist[1] = 100
-2. Immediately relax 1 --> 2, giving dist[2] = 200
-now we have effectively used 2 edges in this single iteration
-
+2. Immediately relax 1 --> 2, giving dist[2] = 200<br>
+now we have effectively used 2 edges in this single iteration!!!
+<br>
 Using `temp[]` prevents this.<br>
 **We always relax edges using values from the previous iteration (`dist[]`) and write updates into `temp[]`.**<br> This ensures each iteration increases the allowed path length by exactly one edge
