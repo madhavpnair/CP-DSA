@@ -29,6 +29,7 @@ k+1 = 1<br>
 if we update in-place during the first iteration:
 1. Relax 0 --> 1 , so dist[1] = 100
 2. Immediately relax 1 --> 2, giving dist[2] = 200<br>
+
 now we have effectively used 2 edges in this single iteration!!!
 <br>
 Using `temp[]` prevents this.<br>
